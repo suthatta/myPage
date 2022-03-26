@@ -3,6 +3,7 @@ import "./project.css";
 import {useState} from "react";
 import emailIcon from "./Email.png";
 import Inquiry from "./Inquiry";
+import PropTypes from "prop-types";
 
 const Project = ({project}) => {
   const [inquiryShown, setInquiryShown] = useState(false);
@@ -26,7 +27,7 @@ const Project = ({project}) => {
             />
           </div>
           <div className="col-md-5">
-            <p className="price">${project.price}</p>
+            <p className="price">$ {project.price}</p>
             <p>{project.description}</p>
             <img
               src={emailIcon}
@@ -43,3 +44,9 @@ const Project = ({project}) => {
 };
 
 export default Project;
+
+Project.propTypes = {
+  category: PropTypes.string,
+  price: PropTypes.number,
+  description: PropTypes.string,
+};

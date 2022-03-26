@@ -6,21 +6,14 @@ import Header from "./header";
 import FeaturedProject from "./featured-project";
 import SearchResults from "../search-results";
 import ProjectFilter from "./project-filter";
-import useProjects from "../hooks/useProjects";
-//import useFeaturedProjects from "../hooks/useFeaturedProject";
 import ProjectFromQuery from "../project/ProjectFromQuery";
 
 // props is suptitle sent to header.js
 
 function App() {
-  //  const projects = useProjects();
   const [allProjects, setAllProjects] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const url = process.env.NODE_ENV
-        ? "/"
-        : "https://suthatta.github.io/myPage/";
-      // const rsp = await fetch(`${url}projects.json`);
       const rsp = await fetch(
         "https://suthatta.github.io/myPage/projects.json"
       );
@@ -38,8 +31,6 @@ function App() {
   }, [allProjects]);
 
   let myPage = process.env.NODE_ENV;
-
-  console.log(myPage);
 
   const userName = "Providing all Secound-Hands products";
   return (

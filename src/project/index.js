@@ -21,7 +21,7 @@ const Project = ({project}) => {
         <div className="row">
           <div className="col-md-7">
             <img
-              src={`https://jbuican14.github.io/test-product-v1/images/${project.photo}.jpeg`}
+              src={`https://suthatta.github.io/myPage/images/${project.photo}.jpeg`}
               alt="Project"
             />
           </div>

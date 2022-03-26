@@ -19,11 +19,11 @@ function App() {
     const fetchData = async () => {
       const url = process.env.NODE_ENV
         ? "/"
-        : "https://jbuican14.github.io/test-product-v1/";
+        : "https://suthatta.github.io/myPage/";
       console.log("url", url);
       // const rsp = await fetch(`${url}projects.json`);
       const rsp = await fetch(
-        "https://jbuican14.github.io/test-product-v1/projects.json"
+        "https://suthatta.github.io/myPage/projects.json"
       );
       const projects = await rsp.json();
       setAllProjects(projects);

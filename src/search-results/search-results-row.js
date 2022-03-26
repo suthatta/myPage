@@ -14,7 +14,9 @@ const SearchResultsRow = ({project}) => {
   return (
     <tr onClick={setActive}>
       <td>{project.address}</td>
-      <td>{project.price}</td>
+      <td>
+        ${project.price.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}
+      </td>
       <td>{project.likes}</td>
     </tr>
   );

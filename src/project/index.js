@@ -27,7 +27,10 @@ const Project = ({project}) => {
           />
         </div>
         <div className="col-md-5">
-          <p className="price">$ {project.price}</p>
+          <p className="price">
+            ${" "}
+            {project.price.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}
+          </p>
           <p>{project.description}</p>
           <img
             src={emailIcon}

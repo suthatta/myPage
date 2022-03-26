@@ -8,7 +8,7 @@ const SearchResults = ({allprojects}) => {
   const filteredProjects = allprojects.filter((p) => p.category === category);
 
   return (
-    <div className="mt-2">
+    <div className="container mt-2">
       <h4>Results for {category}:</h4>
       <table className="table table-hover">
         <tbody>

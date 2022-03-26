@@ -19,10 +19,11 @@ const ProjectFilter = ({allProjects}) => {
   };
 
   return (
-    <div className="row mt-3">
+    <div className="row mt-3 d-flex justify-content-center">
       <div className="offset-md-2 col-md-4">Look for projects category:</div>
       <div className="col-md-4 mb-3">
-        <select title="test" className="form-select" onChange={onSearchChange}>
+        <select title="Items" className="form-select" onChange={onSearchChange}>
+          <option>Choose One</option>
           {categories.map((c) => (
             <option key={c} value={c}>
               {c}

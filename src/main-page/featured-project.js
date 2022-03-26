@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../project";
 
-const featuredProject = ({project}) => {
+const FeaturedProject = ({project}) => {
   console.log("featuredProject", project);
   if (project) {
     return (
@@ -16,4 +16,4 @@ const featuredProject = ({project}) => {
   return <div>No Featured project at this time </div>;
 };
 
-export default featuredProject;
+export default FeaturedProject;

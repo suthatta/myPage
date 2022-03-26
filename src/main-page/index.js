@@ -58,7 +58,7 @@ function App() {
         />
         {console.log("index --> heroo", featuredProject)}
         <Route
-          path="/"
+          path="/myPage"
           element={<FeaturedProject project={featuredProject} />}
         />
       </Routes>

@@ -56,6 +56,7 @@ function App() {
           path="/project/:id"
           element={<ProjectFromQuery allProjects={allProjects} />}
         />
+        {console.log("index --> heroo", featuredProject)}
         <Route
           path="/"
           element={<FeaturedProject project={featuredProject} />}

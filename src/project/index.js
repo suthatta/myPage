@@ -11,32 +11,31 @@ const Project = ({project}) => {
     setInquiryShown(!inquiryShown);
   };
   return (
-    <div>
-      <div>
-        <div className="row mt-2">
-          <h5 className="col-md-12">{project.category}</h5>
+    <div className="container">
+      <div className="row mt-2">
+        <h5 className="col-md-12">{project.category}</h5>
+      </div>
+      <div className="row">
+        <h3 className="col-md-12">{project.address}</h3>
+      </div>
+      <div className="row display-item">
+        <div className="col-md-auto">
+          <img
+            className="image"
+            src={`https://suthatta.github.io/myPage/images/${project.photo}.jpeg`}
+            alt="Project"
+          />
         </div>
-        <div className="row">
-          <h3 className="col-md-12">{project.address}</h3>
-        </div>
-        <div className="row">
-          <div className="col-md-7">
-            <img
-              src={`https://suthatta.github.io/myPage/images/${project.photo}.jpeg`}
-              alt="Project"
-            />
-          </div>
-          <div className="col-md-5">
-            <p className="price">$ {project.price}</p>
-            <p>{project.description}</p>
-            <img
-              src={emailIcon}
-              height="50"
-              alt="inquiry"
-              onClick={inquiryClick}
-            />
-            {inquiryShown && <Inquiry project={project} />}
-          </div>
+        <div className="col-md-5">
+          <p className="price">$ {project.price}</p>
+          <p>{project.description}</p>
+          <img
+            src={emailIcon}
+            height="50"
+            alt="inquiry"
+            onClick={inquiryClick}
+          />
+          {inquiryShown && <Inquiry project={project} />}
         </div>
       </div>
     </div>

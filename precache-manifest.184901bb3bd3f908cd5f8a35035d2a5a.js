@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "434283fa3fddad6fdb92",
+    "revision": "50b4d087a62dc144f44b",
     "url": "/myPage/static/css/main.bacfebba.chunk.css"
   },
   {
-    "revision": "434283fa3fddad6fdb92",
-    "url": "/myPage/static/js/main.b2634f3c.chunk.js"
+    "revision": "50b4d087a62dc144f44b",
+    "url": "/myPage/static/js/main.a65cfe89.chunk.js"
   },
   {
     "revision": "b9fc32a8f2b55818634b",
     "url": "/myPage/static/js/runtime~main.dd70fbbc.js"
   },
   {
-    "revision": "6472097afaf4ccfcaeca",
+    "revision": "29059c8faf12bf8cb445",
     "url": "/myPage/static/css/2.92023b3f.chunk.css"
   },
   {
-    "revision": "6472097afaf4ccfcaeca",
-    "url": "/myPage/static/js/2.4fedcb35.chunk.js"
+    "revision": "29059c8faf12bf8cb445",
+    "url": "/myPage/static/js/2.07ba610a.chunk.js"
   },
   {
     "revision": "db569b567d12d48e4e61",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/myPage/static/media/Email.4fcd624c.png"
   },
   {
-    "revision": "2fb315f5e644870e912b549494185891",
+    "revision": "407c3b7a40d5267f053f60d7b9fda842",
     "url": "/myPage/index.html"
   }
 ];

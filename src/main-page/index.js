@@ -20,7 +20,6 @@ function App() {
       const url = process.env.NODE_ENV
         ? "/"
         : "https://suthatta.github.io/myPage/";
-      console.log("url", url);
       // const rsp = await fetch(`${url}projects.json`);
       const rsp = await fetch(
         "https://suthatta.github.io/myPage/projects.json"
@@ -37,6 +36,10 @@ function App() {
       return allProjects[randomIndex];
     }
   }, [allProjects]);
+
+  let myPage = process.env.NODE_ENV;
+
+  console.log(myPage);
 
   const userName = "Providing all Secound-Hands products";
   return (
@@ -56,9 +59,11 @@ function App() {
           path="/project/:id"
           element={<ProjectFromQuery allProjects={allProjects} />}
         />
-        {console.log("index --> heroo", featuredProject)}
+        {process.env.NODE_ENV === "development"
+          ? (myPage = "/")
+          : (myPage = "/myPage")}
         <Route
-          path="/myPage"
+          path={myPage}
           element={<FeaturedProject project={featuredProject} />}
         />
       </Routes>
